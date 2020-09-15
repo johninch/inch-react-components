@@ -6,5 +6,6 @@
     - 自定义MyRCFieldForm实现
 - 传送门Dialog实现
 - InchRedux实现
-- redux中间件：thunk、logger、promise实现
+    - redux中间件：thunk、logger、promise实现
+    - 实现combineReducers
 
