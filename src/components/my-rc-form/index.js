@@ -58,28 +58,3 @@ export default function createForm(Cmp) {
         }
     }
 };
-
-
-
-// function compose(...funcs) {
-//     // return funcs.reduce((a, b) => (...args) => a(b(...args)))
-//     return funcs.reduce((a, b) => {
-//         console.log(a, b); // f1() f2()
-
-//         return (...args) => {
-//             console.log("args", ...args); // lala
-//             return a(b(...args));
-//         };
-//     });
-// }
-
-// const f1 = (arg) => {
-//     console.log("f1", arg);
-// };
-
-// const f2 = (arg) => {
-//     console.log("f2", arg);
-// };
-
-// compose(f1, f2)("lala");
-
