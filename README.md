@@ -8,4 +8,6 @@
 - InchRedux实现
     - redux中间件：thunk、logger、promise实现
     - 实现combineReducers
-
+- useSelector
+    - 实现Provider、connect、useSelector、useDispatch
+    - 实现bindActionCreator
