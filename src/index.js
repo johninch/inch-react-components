@@ -20,7 +20,7 @@
 // import React, {Component} from "react";
 // import ReactDOM from "react-dom";
 import React from "./InchReact/";
-import ReactDOM from "./InchReact/react-dom";
+import ReactDOM, { useState } from "./InchReact/react-dom";
 import Component from "./InchReact/Component";
 import "./index.css";
 
@@ -38,9 +38,13 @@ class ClassComponent extends Component {
     }
 }
 
-function FunctionComponent(props) {
+function FunctionComponent({ name }) {
+    // 将状态存到当前函数组件的fiber中
+    const [count, setCount] = useState(0)
     return <div className="border">
-        <span className={props.color}>{props.name}</span>
+        {/* <span className={props.color}>{props.name}</span> */}
+        {name}
+        <button onClick={() => setCount(count + 1)}>{count}</button>
     </div>;
 }
 
